@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenland</title>
+    <!-- Tailwind CSS link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .header-image {
+            width: 300px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .best-seller-image {
+            width: 150px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NavBar section and Responsive -->
+    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl">Greenden</h1>
+        <svg id="menu_bar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <div class="hidden md:flex">
+            <ul class="flex gap-5">
+                <li>
+                    <a href="./index.html" class="hover:underline hover:text-black">Home</a>
+                </li>
+                <li>
+                    <a href="./Product.html" class="hover:underline">Products</a>
+                </li>
+                <li>
+                    <a href="./Contact.html" class="hover:underline">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Side nav bar -->
+    <div id="side_nav" class="p-5 bg-green-100" style="width: 30%; height: 100vh; position: fixed; z-index: 10; top: 0; right: -50%;">
+        <div class="text-right">
+            <p id="close_btn" style="display: inline; cursor: pointer;">x</p>
+        </div>
+        <ul class="flex flex-col items-center gap-8">
+            <li>
+                <a href="./index.html" class="hover:underline hover:text-black">Home</a>
+            </li>
+            <li>
+                <a href="./Product.html" class="hover:underline">Products</a>
+            </li>
+            <li>
+                <a href="./Contact.html" class="hover:underline">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Header section -->
+    <header class="bg-green-100 p-5 md:p-10 flex justify-center gap-2">
+        <div class="flex flex-col justify-center">
+            <div class="mt-1 mb-5">
+                <p>We offer you a wide range of Artificial and Natural Flowers</p>
+            </div>
+            <div>
+                <h2 class="font-bold mt-1 text-2xl md:text-4xl">Plant for your Interior</h2>
+            </div>
+            <div class="mt-2">
+                <button class="p-3 bg-black text-white rounded">Shop Now</button>
+                <button class="p-3 border border-black rounded">Watch Video</button>
+            </div>
+            <div class="mt-5">
+                <p>160+ Plant Species | 100+ Clients</p>
+            </div>
+        </div>
+        <div class="hidden md:flex">
+            <img src="./Images/8.jpg" class="header-image">
+        </div>
+    </header>
+
+    <!-- About us section -->
+    <div class="text-center mt-4">
+        <h2 class="font-bold text-3xl">About Us</h2>
+        <p>This site for those who admire the beauty and harmony of nature</p>
+    </div>
+
+    <section class="p-7 md:flex">
+        <div class="md:flex">
+            <div class="text-center p-5 border border-black m-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 inline">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+                </svg>
+                <p class="">Large Assortment</p>
+                <p class="">At Greenden, we offer a wide variety of artificial and natural flowers in numerous species, colors, and sizes to suit any decor. Our collection is designed to provide high-quality, beautiful plants for every space.</p>
+            </div>
+            <div class="text-center p-5 border border-black m-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 inline">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+                </svg>
+                <p class="">Free and Fast Shipping</p>
+                <p class="">Greenden ensures your plants arrive quickly and in perfect condition with our free and fast shipping service. Enjoy the convenience of speedy delivery right to your doorstep, making it easier than ever to enhance your space with our beautiful plants.</p>
+            </div>
+            <div class="text-center p-5 border border-black m-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 inline">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+                </svg>
+                <p class="">24/7 Support</p>
+                <p class="">Greenden provides round-the-clock support to assist you whenever you need help. Our dedicated team is available 24/7 to answer your questions and address any concerns promptly and efficiently.</p>
+            </div>
+        </div>
+    </section>
+
+   <!-- Best Seller -->
+<section class="p-3 mb-5">
+    <div class="text-3xl font-bold text-center mb-5">
+        <h1>Best Seller</h1>
+    </div>
+    <div class="grid grid-cols-2 gap-8 md:grid-cols-4">
+        <div class="text-center">
+            <img src="./Images/2.jpg" class="best-seller-image inline hover:shadow-2xl transform hover:-translate-y-2" style="width: 200px; height: 200px;">
+            <p>Rose Plant</p>
+            <p>$20</p>
+        </div>
+        <div class="text-center">
+            <img src="./Images/3.jpg" class="best-seller-image inline hover:shadow-2xl transform hover:-translate-y-2" style="width: 200px; height: 200px;">
+            <p>Lily Plant</p>
+            <p>$30</p>
+        </div>
+        <div class="text-center">
+            <img src="./Images/4.jpg" class="best-seller-image inline hover:shadow-2xl transform hover:-translate-y-2" style="width: 200px; height: 200px;">
+            <p>Sunflower Plant</p>
+            <p>$20</p>
+        </div>
+        <div class="text-center">
+            <img src="./Images/5.jpg" class="best-seller-image inline hover:shadow-2xl transform hover:-translate-y-2" style="width: 200px; height: 200px;">
+            <p>Jasmine Plant</p>
+            <p>$40</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+  <!--coutomer review-->  
+<section>
+    <div class="text-center text-4xl font-bold">
+        <h1>Customer Reviews</h1>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-8">
+        <div class="bg-green-900 text-white p-5 container mb-5">
+            <p>Greenden's plants have truly transformed my living space. The variety and quality exceeded my expectations.</p>
+            <p class="text-yellow-300">Sam</p>
+        </div>
+        <div class="bg-green-900 text-white p-5 container mb-5">
+            <p>I was impressed with the prompt delivery and the excellent condition of the plants. Greenden's customer service was exceptional.</p>
+            <p class="text-yellow-300">Jim</p>
+        </div>
+        <div class="bg-green-900 text-white p-5 container mb-5">
+            <p>I highly recommend Greenden for their beautiful selection and outstanding support. They made the whole process easy and enjoyable.</p>
+            <p class="text-yellow-300">Parker</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Join -->
+    <section>
+        <div class="flex flex-col items-center gap-5 mt-10">
+            <h1 class="text-center font-bold text-3xl">Join Our News Letter</h1>
+            <p class="text-center">Sign up for our email newsletter to get exclusive discounts, updates, and more</p>
+            <input type="text" class="border border-black w-4/5">
+            <button class="p-3 bg-black text-white underline mb-5">Subscribe</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section>
+        <div class="bg-green-100 p-8 flex flex-col gap-5">
+            <h1 class="font-bold text-4xl gap-5">Greenden</h1>
+            <p>The standard chunk of lorem ipsum used since the 1500s is reproduced below for those interested</p>
+            <p>@ 2024 Greenden.com</p>
+        </div>
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

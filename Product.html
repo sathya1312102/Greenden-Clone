@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenland</title>
+    <!-- Tailwind CSS link -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- NavBar section and Resiponsive  -->
+
+    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10 ">
+
+        <h1 class="text-2xl"> Greenden </h1>
+
+        <svg  id="menu_bar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+
+        <div class="hidden md:flex">
+
+            <ul class="flex gap-5">
+
+
+                <li>
+                    <a href="./index.html" class="hover:underline hover:text-black"> Home</a>
+                </li>
+                <li>
+                    <a href="./Product.html" class="hover:underline"> Products</a>
+                </li>
+                <li>
+                    <a href="./Contact.html" class="hover:underline"> Contact</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <!-- Side nave bor -->
+    <div id="side_nav" class="p-5 bg-green-100 "
+        style="width: 30%; height: 100vh; position: fixed; z-index: 10; top: 0; right: -50%;">
+        <div class="text-right">
+            <p  id="close_btn" style="display: inline; cursor: pointer;" >x</p>
+        </div>
+
+
+
+        <ul class="flex  flex-col items-center gap-8 ">
+
+
+
+
+            <li>
+                <a href="./index.html" class="hover:underline hover:text-black "> Home</a>
+            </li>
+            <li>
+                <a href="./Product.html" class="hover:underline"> Products</a>
+            </li>
+            <li>
+                <a href="./Contact.html" class="hover:underline"> Contact</a>
+            </li>
+        </ul>
+    </div>
+
+
+ <!-- Our Products -->
+<section>
+    <div class="flex flex-col items-center">
+        <h1 class="font-bold text-3xl text-center mt-24 mb-5"> Our Products</h1>
+        <input id="Search_ele" type="text" placeholder="Search for a Product" class="p-2 border border-black w-9/12 ">
+    </div>
+    <div id="Product_container" class="grid grid-cols-2 gap-8 md:grid-cols-4 mt-10 mb-10">
+        <div class="text-center">
+            <img src="./Images/2.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2 product-image" style="width: 200px; height: 200px;">
+            <h1>Rose Plant</h1>
+            <p>$20</p>
+        </div>
+        <div class="text-center">
+            <img src="./Images/3.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2 product-image" style="width: 200px; height: 200px;">
+            <h1>Rose Plant</h1>
+            <p>$20</p>
+        </div>
+        <div class="text-center">
+            <img src="./Images/4.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2 product-image" style="width: 200px; height: 200px;">
+            <h1>Sunflower Plant</h1>
+            <p>$20</p>
+        </div>
+        <div class="text-center">
+            <img src="./Images/5.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2 product-image" style="width: 200px; height: 200px;">
+            <h1>Jasmine Plant</h1>
+            <p>$20</p>
+        </div>
+        <div class="text-center">
+            <img src="./Images/Best Seller_1.png" class="inline hover:shadow-2xl transform hover:-translate-y-2 product-image" style="width: 200px; height: 200px;">
+            <h1>Rose Plant</h1>
+            <p>$20</p>
+        </div>
+        <div class="text-center">
+            <img src="./Images/Best Seller_2.png" class="inline hover:shadow-2xl transform hover:-translate-y-2 product-image" style="width: 200px; height: 200px;">
+            <h1>Roja Plant</h1>
+            <p>$20</p>
+        </div>
+        <div class="text-center">
+            <img src="./Images/Best Seller_3.png" class="inline hover:shadow-2xl transform hover:-translate-y-2 product-image" style="width: 200px; height: 200px;">
+            <h1>Snake Plant</h1>
+            <p>$20</p>
+        </div>
+        <div class="text-center">
+            <img src="./Images/Best Seller_2.png" class="inline hover:shadow-2xl transform hover:-translate-y-2 product-image" style="width: 200px; height: 200px;">
+            <h1>Ball Plant</h1>
+            <p>$20</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- footer section -->
+    <section>
+
+        <div class="bg-green-100 p-8 flex flex-col  gap-5">
+            <h1 class="font-bold text-4xl  gap-5">Greenden</h1>
+            <p> The Standrad chunk of lorem ipsum used since the 1500s is reprodused below for those interest</p>
+            <p>@ 2024 Greenden.com</p>
+        </div>
+    </section>
+
+
+
+
+    <script src="./Product.js"></script>
+</body>
+
+</html>
